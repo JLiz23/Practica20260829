@@ -6,12 +6,12 @@ export function ListaTareas() {
     const [nuevaTarea, setNuevaTarea] = useState('');
 
     const agregar = (e) => {
-        e.preventDefault();
-        if (NuevaTarea.trim()) {
-            dispatch({ type: 'AGREGAR_TAREA', payload: nuevoTarea });
-            setNuevaTarea('');
-        }
-    };
+    e.preventDefault();
+    if (nuevaTarea.trim()) {
+        dispatch({ type: 'AGREGAR_TAREA', payload: nuevaTarea });
+        setNuevaTarea('');
+    }
+};
 
     return (
         <div>
